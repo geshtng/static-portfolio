@@ -1,10 +1,12 @@
-body{
-    background-color: #0d316b;
+html, body{
     font-family: "Open Sans", "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    height: 100%;
+    margin: 0;
 }
 
 .page-1{
-    height: 100vh;
+    background-color: #0d316b;
+    height: 100%;
     display: flex;
     flex-direction: column;
     -webkit-box-pack: center;
@@ -20,7 +22,7 @@ body{
     width: 60%;
 }
 
-.judul{
+.judul-1{
     color: #fff;
     font-weight: 300;
     font-size: 60px;
@@ -28,8 +30,8 @@ body{
     width: 100%;
 }
 
-.subjudul{
-    margin-top: 16px;
+.subjudul-1{
+    margin-top: 30px;
     color:  #fff;
     font-size: 35px;
     display: block;
@@ -45,12 +47,11 @@ body{
     flex-wrap: wrap;
     justify-content: center;
     width: 60%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .icon-link{
-    color: #fff;
-    font-size: 30px;
+    text-decoration: none;
 }
 
 .icon-svg{
@@ -60,3 +61,103 @@ body{
     height: 1em;
     vertical-align: -0.123em;
 }
+
+.filter-white{
+    filter: invert(100%);
+    height: 40px;
+    width: 40px;
+}
+
+.judul{
+    color: #fff;
+    font-weight: 300;
+    font-size: 50px;
+    display: block;
+    width: 100%;
+}
+
+.subjudul{
+    margin-top: 10px;
+    color:  #fff;
+    font-size: 25px;
+    display: block;
+    width: 100%;
+}
+
+.page-2{
+    background-color: #333333;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.page-3{
+    background-color: #fff;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.page-4{
+    background-color: #333333;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+.flex-container > div {
+    margin: 10px;
+    padding: 15px;
+    font-size: 25px;
+    width: 100vw;
+
+}
+
+.story{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.story-tab-button {
+    background-color: #333333;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+}
+  
+.tablink:hover {
+    background-color: #9b9b9b;
+}
+
+.story-tab-content {
+    color: #000;
+    display: show;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+  
