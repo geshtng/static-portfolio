@@ -116,48 +116,68 @@ html, body{
     align-items: center;
 }
 
-.flex-container {
+.grid-container {
     display: flex;
-    width: 80vw;
+    width: 70vw;
     justify-content: center;
     margin-top: 40px;
   }
 
-.flex-container > div {
+.grid-container > div {
     margin: 10px;
-    padding: 15px;
+    padding: 10px;
     font-size: 25px;
     width: 100vw;
 
 }
 
-.story{
+.story-data{
     margin-top: 20px;
-    text-align: center;
+    text-align: left;
+    font-size: 1px;
+    overflow-x: auto;
+}
+
+.story-photo{
+    margin-top: 20px;
+    text-align: left;
     font-size: 18px;
 }
 
-.story-tab-button {
-    background-color: #333333;
-    color: white;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    font-size: 17px;
-    width: 50%;
-}
-  
-.tablink:hover {
-    background-color: #9b9b9b;
-}
-
-.story-tab-content {
-    color: #000;
-    display: show;
-    padding: 100px 20px;
+.story-photo img{
+    width: 90%;
     height: 100%;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
 }
 
+.story-photo img:hover{
+    -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.story-data table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+}
+
+.story-data th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+.story-data tr:nth-child(even){
+    background-color: #f2f2f2
+}
+
+.story-data p{
+    font-size: 16px;
+}
+
+.quotes{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
   
